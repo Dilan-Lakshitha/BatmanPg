@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { MatDialog } from '@angular/material/dialog';
+// import { MatDialog } from '@angular/material/dialog';
 import { UserDialogComponent } from './userDialog/user-dialog/user-dialog.component';
 
 @Component({
@@ -8,19 +8,19 @@ import { UserDialogComponent } from './userDialog/user-dialog/user-dialog.compon
   styleUrls: ['./user-profile.component.css']
 })
 export class UserProfileComponent {
-  constructor(private matdialog:MatDialog){
+  // constructor(private matdialog:MatDialog){
 
-  }
+  // }
 
-  viewDetails(str:any):void{
-    const dialogRef = this.matdialog.open(UserDialogComponent,{
-      width:'400px',
-      data:{message:str}
-    });
+  // viewDetails(str:any):void{
+  //   const dialogRef = this.matdialog.open(UserDialogComponent,{
+  //     width:'400px',
+  //     data:{message:str}
+  //   });
 
-    dialogRef.afterClosed().subscribe(result =>{
+  //   dialogRef.afterClosed().subscribe(result =>{
 
-    });
-  }
+  //   });
+  // }
 
 }
